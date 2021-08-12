@@ -1,0 +1,16 @@
+public class arrayusingrecursion
+{
+    public static void main(String args[])
+    {
+        int a[]={10,20,58,0001,72};
+        arrayusingrecursion(a,0,a.length);
+    }
+    static void arrayusingrecursion(int a[],int i,int n)
+    {
+        if(i>=n)
+        return;
+        System.out.print(a[i]+" ");
+        arrayusingrecursion(a,i+1,n);
+        i++;
+    }
+}
